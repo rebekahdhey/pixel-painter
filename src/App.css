@@ -1,0 +1,83 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: 'Nunito', system-ui, sans-serif;
+  background: #F4F1EA;
+  color: #3A3540;
+  user-select: none;
+}
+
+h1 {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 28px;
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  color: #9A93A0;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.pixel-grid {
+  display: grid;
+  width: min(90vw, 400px);
+  aspect-ratio: 1;
+  border: 3px solid #3A3540;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+}
+
+.pixel-cell {
+  border: 0.5px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.1s ease, border-color 0.1s ease;
+}
+
+.swatch:hover {
+  transform: translateY(-2px);
+}
+
+.swatch.active {
+  border-color: #3A3540;
+  transform: scale(1.1);
+}
+
+.clear-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 14px;
+  background: #3A3540;
+  color: #F4F1EA;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #55505C;
+}
