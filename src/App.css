@@ -4,12 +4,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 16px;
   font-family: 'Nunito', system-ui, sans-serif;
   background: #F4F1EA;
   color: #3A3540;
   user-select: none;
 }
+
 
 h1 {
   font-family: 'Baloo 2', sans-serif;
@@ -25,13 +26,14 @@ h1 {
 
 .pixel-grid {
   display: grid;
-  width: min(90vw, 400px);
+  width: min(85vw, 65vh);
   aspect-ratio: 1;
   border: 3px solid #3A3540;
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background: #FFFFFF;
+  flex-shrink: 0;
 }
 
 .pixel-cell {
